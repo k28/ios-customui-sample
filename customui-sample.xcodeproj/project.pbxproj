@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E52E2AB924D616C300E097E7 /* SimpleSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E2AB824D616C300E097E7 /* SimpleSelectCell.swift */; };
 		E570705D24D5529E00297410 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570705C24D5529E00297410 /* AppDelegate.swift */; };
 		E570705F24D5529E00297410 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570705E24D5529E00297410 /* SceneDelegate.swift */; };
 		E570706124D5529E00297410 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570706024D5529E00297410 /* ViewController.swift */; };
@@ -19,9 +20,14 @@
 		E570707A24D604C900297410 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570707924D604C900297410 /* AppViewController.swift */; };
 		E570707C24D6076500297410 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570707B24D6076500297410 /* AppNavigationController.swift */; };
 		E570707E24D6079A00297410 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570707D24D6079A00297410 /* MainViewController.swift */; };
+		E5E4088E24D60EA400C33471 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4088D24D60EA400C33471 /* UIColor-Extension.swift */; };
+		E5E4089024D60F7100C33471 /* AppContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4088F24D60F7100C33471 /* AppContentView.swift */; };
+		E5E4089324D610B300C33471 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4089224D610B300C33471 /* common.swift */; };
+		E5E4089524D6131D00C33471 /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4089424D6131D00C33471 /* UIView-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E52E2AB824D616C300E097E7 /* SimpleSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSelectCell.swift; sourceTree = "<group>"; };
 		E570705924D5529E00297410 /* customui-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "customui-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E570705C24D5529E00297410 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E570705E24D5529E00297410 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,10 @@
 		E570707924D604C900297410 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		E570707B24D6076500297410 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		E570707D24D6079A00297410 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E5E4088D24D60EA400C33471 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		E5E4088F24D60F7100C33471 /* AppContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContentView.swift; sourceTree = "<group>"; };
+		E5E4089224D610B300C33471 /* common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
+		E5E4089424D6131D00C33471 /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E52E2AB724D6161C00E097E7 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E570707624D5539E00297410 /* AppTableViewCell.swift */,
+				E52E2AB824D616C300E097E7 /* SimpleSelectCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		E570705024D5529E00297410 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +99,8 @@
 		E570707024D552DF00297410 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E5E4089124D6109000C33471 /* Utility */,
+				E5E4088C24D60E6C00C33471 /* Extensions */,
 				E570707824D604A400297410 /* ViewController */,
 				E570707124D552F500297410 /* View */,
 				E570705C24D5529E00297410 /* AppDelegate.swift */,
@@ -92,9 +113,10 @@
 		E570707124D552F500297410 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E52E2AB724D6161C00E097E7 /* cell */,
 				E570707224D5532900297410 /* AppTableView.swift */,
 				E570707424D5536200297410 /* AppFixedTableView.swift */,
-				E570707624D5539E00297410 /* AppTableViewCell.swift */,
+				E5E4088F24D60F7100C33471 /* AppContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +129,23 @@
 				E570707D24D6079A00297410 /* MainViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E5E4088C24D60E6C00C33471 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E5E4088D24D60EA400C33471 /* UIColor-Extension.swift */,
+				E5E4089424D6131D00C33471 /* UIView-Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E5E4089124D6109000C33471 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E5E4089224D610B300C33471 /* common.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,11 +220,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E570706124D5529E00297410 /* ViewController.swift in Sources */,
+				E5E4089324D610B300C33471 /* common.swift in Sources */,
+				E5E4088E24D60EA400C33471 /* UIColor-Extension.swift in Sources */,
+				E52E2AB924D616C300E097E7 /* SimpleSelectCell.swift in Sources */,
 				E570707324D5532900297410 /* AppTableView.swift in Sources */,
 				E570705D24D5529E00297410 /* AppDelegate.swift in Sources */,
 				E570705F24D5529E00297410 /* SceneDelegate.swift in Sources */,
+				E5E4089024D60F7100C33471 /* AppContentView.swift in Sources */,
 				E570707A24D604C900297410 /* AppViewController.swift in Sources */,
 				E570707C24D6076500297410 /* AppNavigationController.swift in Sources */,
+				E5E4089524D6131D00C33471 /* UIView-Extension.swift in Sources */,
 				E570707E24D6079A00297410 /* MainViewController.swift in Sources */,
 				E570707524D5536200297410 /* AppFixedTableView.swift in Sources */,
 				E570707724D5539E00297410 /* AppTableViewCell.swift in Sources */,

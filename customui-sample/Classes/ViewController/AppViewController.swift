@@ -11,9 +11,20 @@ import UIKit
 /// Common View Controller
 class AppViewController: UIViewController {
     
+    let contentView: AppContentView = AppContentView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.addSubview(contentView)
+        contentView.setupFitConstraint(to: view)
+        
+        setupContentView()
     }
     
+    /// サブクラスでオーバーライドする
+    func setupContentView() {
+        
+    }
 
 }

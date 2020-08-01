@@ -10,5 +10,5 @@ import UIKit
 
 // Common table view
 class AppTableView: UITableView {
-
+    
 }
