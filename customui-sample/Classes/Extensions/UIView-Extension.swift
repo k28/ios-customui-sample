@@ -18,12 +18,4 @@ extension UIView {
         self.centerYAnchor.constraint(equalTo: to.centerYAnchor).isActive = true
     }
     
-    func setupFitConstraint(to: UIView, height: CGFloat) {
-        self.translatesAutoresizingMaskIntoConstraints = false
-        self.widthAnchor.constraint(equalTo: to.widthAnchor).isActive = true
-        self.centerXAnchor.constraint(equalTo: to.centerXAnchor).isActive = true
-        self.heightAnchor.constraint(equalToConstant: height).isActive = true
-        self.centerYAnchor.constraint(equalTo: to.centerYAnchor).isActive = true
-    }
-
 }

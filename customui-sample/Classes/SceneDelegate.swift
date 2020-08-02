@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  customui-sample
 //
-//  Created by kazuya on 2020/08/01.
+//  Created by K.Hatano on 2020/08/01.
 //  Copyright © 2020 K.Hatano. All rights reserved.
 //
 

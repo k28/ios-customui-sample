@@ -8,9 +8,10 @@
 
 import UIKit
 
+/// 一番初めに表示されるViewController
 class MainViewController: AppViewController {
     
-    let mainView = MainView()
+    let mainView = AppFixedTableView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,30 +20,27 @@ class MainViewController: AppViewController {
     }
     
     override func setupContentView() {
-        
         contentView.changeMainView(mainView)
+
+        setupMenuContents()
+    }
+    
+    func setupMenuContents() {
+        
+        let fixedCellSection = FixedContents()
+        
+        fixedCellSection.append(SimpleSelectCell(title: "AutoLayout", onSelect: { [weak self] in
+            let vc = AutoLauoutSampleViewController()
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }))
+
+        fixedCellSection.append(SimpleSelectCell(title: "XibCell", onSelect: { [weak self] in
+            let vc = XibCellSampleViewController()
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }))
+
+        mainView.sections.append(fixedCellSection)
     }
     
 }
 
-extension MainViewController {
-    
-    class MainView: AppFixedTableView {
-        
-        override func setupContents() {
-            
-            let sample = SimpleSelectCell(title: "Test", onSelect: {
-                print("SimpleCell Selected!")
-            })
-            
-            let normalCell = AppTableViewCell(style: .default, reuseIdentifier: nil)
-            normalCell.textLabel?.text = "UITableViewCell"
-            
-            let fixedCellSection = FixedContents()
-            fixedCellSection.append(sample)
-            fixedCellSection.append(normalCell)
-            self.sections.append(fixedCellSection)
-        }
-    }
-    
-}

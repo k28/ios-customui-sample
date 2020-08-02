@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E509ECFC24D6F8EA0021192E /* AutoLauoutSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509ECFB24D6F8EA0021192E /* AutoLauoutSampleViewController.swift */; };
+		E509ECFE24D6FB3A0021192E /* XibCellSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509ECFD24D6FB3A0021192E /* XibCellSampleViewController.swift */; };
 		E52E2AB924D616C300E097E7 /* SimpleSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E2AB824D616C300E097E7 /* SimpleSelectCell.swift */; };
 		E570705D24D5529E00297410 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570705C24D5529E00297410 /* AppDelegate.swift */; };
 		E570705F24D5529E00297410 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570705E24D5529E00297410 /* SceneDelegate.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E509ECFB24D6F8EA0021192E /* AutoLauoutSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLauoutSampleViewController.swift; sourceTree = "<group>"; };
+		E509ECFD24D6FB3A0021192E /* XibCellSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibCellSampleViewController.swift; sourceTree = "<group>"; };
 		E52E2AB824D616C300E097E7 /* SimpleSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSelectCell.swift; sourceTree = "<group>"; };
 		E570705924D5529E00297410 /* customui-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "customui-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E570705C24D5529E00297410 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				E570707924D604C900297410 /* AppViewController.swift */,
 				E570707B24D6076500297410 /* AppNavigationController.swift */,
 				E570707D24D6079A00297410 /* MainViewController.swift */,
+				E509ECFB24D6F8EA0021192E /* AutoLauoutSampleViewController.swift */,
+				E509ECFD24D6FB3A0021192E /* XibCellSampleViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -215,12 +221,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E509ECFE24D6FB3A0021192E /* XibCellSampleViewController.swift in Sources */,
 				E570706124D5529E00297410 /* ViewController.swift in Sources */,
 				E5E4089324D610B300C33471 /* common.swift in Sources */,
 				E5E4088E24D60EA400C33471 /* UIColor-Extension.swift in Sources */,
 				E52E2AB924D616C300E097E7 /* SimpleSelectCell.swift in Sources */,
 				E570707324D5532900297410 /* AppTableView.swift in Sources */,
 				E570705D24D5529E00297410 /* AppDelegate.swift in Sources */,
+				E509ECFC24D6F8EA0021192E /* AutoLauoutSampleViewController.swift in Sources */,
 				E570705F24D5529E00297410 /* SceneDelegate.swift in Sources */,
 				E5E4089024D60F7100C33471 /* AppContentView.swift in Sources */,
 				E570707A24D604C900297410 /* AppViewController.swift in Sources */,
