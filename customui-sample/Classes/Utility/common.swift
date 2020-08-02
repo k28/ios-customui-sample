@@ -9,6 +9,9 @@
 import UIKit
 
 class common {
+    
+    static let cellmargin: CGFloat = 20.0
+    
 }
 
 extension common {

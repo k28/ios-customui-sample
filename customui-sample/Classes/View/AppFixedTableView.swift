@@ -18,6 +18,7 @@ class AppFixedTableView: AppTableView {
         
         self.delegate = self
         self.dataSource = self
+        self.tableFooterView = UIView()
         setupContents()
     }
     
@@ -37,18 +38,26 @@ extension AppFixedTableView: UITableViewDataSource, UITableViewDelegate {
         return sections.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let cell = self.tableView(self, cellForRowAt: indexPath)
+        if let cell = cell as? ICustomCell {
+            return cell.cellHeight
+        }
+
+        return UITableView.automaticDimension
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sections[section].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return sections[indexPath.section].cellAtIndex(indexPath.section)
+        return sections[indexPath.section].cellAtIndex(indexPath.row)
     }
     
-    // - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let cell = sections[indexPath.section].cellAtIndex(indexPath.section)
+        let cell = sections[indexPath.section].cellAtIndex(indexPath.row)
         if cell.isEnabled == false { return }
         cell.onSelect()
     }

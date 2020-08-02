@@ -35,8 +35,12 @@ extension MainViewController {
                 print("SimpleCell Selected!")
             })
             
+            let normalCell = AppTableViewCell(style: .default, reuseIdentifier: nil)
+            normalCell.textLabel?.text = "UITableViewCell"
+            
             let fixedCellSection = FixedContents()
             fixedCellSection.append(sample)
+            fixedCellSection.append(normalCell)
             self.sections.append(fixedCellSection)
         }
     }

@@ -23,7 +23,6 @@ class AppContentView: UIView {
     func changeMainView(_ v: UIView) {
         mainView.removeFromSuperview()
         self.addSubview(v)
-
         v.setupFitConstraint(to: self)
     }
     

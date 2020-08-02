@@ -11,6 +11,9 @@ import UIKit
 /// Common TableViewCell
 class AppTableViewCell: UITableViewCell {
     
+    var onSelect: (() -> Void) = { }
+    var isEnabled: Bool = true
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
@@ -19,11 +22,9 @@ class AppTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    var onSelect: (() -> Void) = { }
-    var isEnabled: Bool = true
-    
-    func setContentView(_ v: UIView) {
+    func addToContentView(_ v: UIView) {
         self.contentView.addSubview(v)
+        v.setupFitConstraint(to: self.contentView)
     }
 
     override func awakeFromNib() {
@@ -34,4 +35,12 @@ class AppTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
 
+}
+
+/// Cellをコードでカスタムする際に実装するプロトコル
+protocol ICustomCell {
+    
+    /// Cellの高さを返します
+    var cellHeight: CGFloat { get }
+    
 }
