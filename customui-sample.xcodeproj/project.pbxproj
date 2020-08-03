@@ -27,6 +27,7 @@
 		E5E4089024D60F7100C33471 /* AppContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4088F24D60F7100C33471 /* AppContentView.swift */; };
 		E5E4089324D610B300C33471 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4089224D610B300C33471 /* common.swift */; };
 		E5E4089524D6131D00C33471 /* UIView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4089424D6131D00C33471 /* UIView-Extension.swift */; };
+		E5F79E6F24D8AF9E00F844F7 /* AutoLayoutSampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F79E6E24D8AF9E00F844F7 /* AutoLayoutSampleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		E5E4088F24D60F7100C33471 /* AppContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContentView.swift; sourceTree = "<group>"; };
 		E5E4089224D610B300C33471 /* common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		E5E4089424D6131D00C33471 /* UIView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extension.swift"; sourceTree = "<group>"; };
+		E5F79E6E24D8AF9E00F844F7 /* AutoLayoutSampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutSampleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				E52E2AB824D616C300E097E7 /* SimpleSelectCell.swift */,
 				E509ECFF24D84E5F0021192E /* XibSampleTableViewCell.swift */,
 				E509ED0024D84E5F0021192E /* XibSampleTableViewCell.xib */,
+				E5F79E6E24D8AF9E00F844F7 /* AutoLayoutSampleTableViewCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				E570707C24D6076500297410 /* AppNavigationController.swift in Sources */,
 				E5E4089524D6131D00C33471 /* UIView-Extension.swift in Sources */,
 				E570707E24D6079A00297410 /* MainViewController.swift in Sources */,
+				E5F79E6F24D8AF9E00F844F7 /* AutoLayoutSampleTableViewCell.swift in Sources */,
 				E570707524D5536200297410 /* AppFixedTableView.swift in Sources */,
 				E509ED0124D84E5F0021192E /* XibSampleTableViewCell.swift in Sources */,
 				E570707724D5539E00297410 /* AppTableViewCell.swift in Sources */,
