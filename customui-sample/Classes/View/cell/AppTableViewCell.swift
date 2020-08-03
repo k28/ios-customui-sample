@@ -19,7 +19,8 @@ class AppTableViewCell: UITableViewCell {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+        //fatalError("init(coder:) has not been implemented")
     }
     
     func addToContentView(_ v: UIView) {
