@@ -84,11 +84,6 @@ extension AutoLayoutSampleTableViewCell {
             // imageViewにサイズのプロパティを設定する
             imageView.widthAnchor.constraint(equalToConstant: 32.0).isActive = true
             imageView.heightAnchor.constraint(equalToConstant: 32.0).isActive = true
-            
-            common.showLayerBounds(imageView, .red)
-            common.showLayerBounds(titleLabel, .red)
-            common.showLayerBounds(subtitleLabel, .red)
-            common.showLayerBounds(statusLabel)
         }
         
         func seutpContents() {
