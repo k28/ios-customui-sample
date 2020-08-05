@@ -38,6 +38,11 @@ class MainViewController: AppViewController {
             let vc = XibCellSampleViewController()
             self?.navigationController?.pushViewController(vc, animated: true)
         }))
+        
+        fixedCellSection.append(SimpleSelectCell(title: "CustomButton", onSelect: { [weak self] in
+            let vc = CustomButtonViewController()
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }))
 
         mainView.sections.append(fixedCellSection)
     }

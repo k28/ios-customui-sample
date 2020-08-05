@@ -28,6 +28,6 @@ extension UIColor {
 
 extension UIColor {
     
-    static let appBackground: UIColor = UIColor.dynamicColor(light: .white, dark: .darkGray)
+    static let appBackground: UIColor = UIColor.systemBackground
     
 }

@@ -23,6 +23,8 @@
 		E570707A24D604C900297410 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570707924D604C900297410 /* AppViewController.swift */; };
 		E570707C24D6076500297410 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570707B24D6076500297410 /* AppNavigationController.swift */; };
 		E570707E24D6079A00297410 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570707D24D6079A00297410 /* MainViewController.swift */; };
+		E5AB6EA024DAE56F004AD3BA /* CustomButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB6E9F24DAE56F004AD3BA /* CustomButtonViewController.swift */; };
+		E5AB6EA224DAE663004AD3BA /* CustomUIViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB6EA124DAE663004AD3BA /* CustomUIViewCell.swift */; };
 		E5E4088E24D60EA400C33471 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4088D24D60EA400C33471 /* UIColor-Extension.swift */; };
 		E5E4089024D60F7100C33471 /* AppContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4088F24D60F7100C33471 /* AppContentView.swift */; };
 		E5E4089324D610B300C33471 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4089224D610B300C33471 /* common.swift */; };
@@ -49,6 +51,8 @@
 		E570707924D604C900297410 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		E570707B24D6076500297410 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		E570707D24D6079A00297410 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E5AB6E9F24DAE56F004AD3BA /* CustomButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonViewController.swift; sourceTree = "<group>"; };
+		E5AB6EA124DAE663004AD3BA /* CustomUIViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIViewCell.swift; sourceTree = "<group>"; };
 		E5E4088D24D60EA400C33471 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		E5E4088F24D60F7100C33471 /* AppContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContentView.swift; sourceTree = "<group>"; };
 		E5E4089224D610B300C33471 /* common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 				E509ECFF24D84E5F0021192E /* XibSampleTableViewCell.swift */,
 				E509ED0024D84E5F0021192E /* XibSampleTableViewCell.xib */,
 				E5F79E6E24D8AF9E00F844F7 /* AutoLayoutSampleTableViewCell.swift */,
+				E5AB6EA124DAE663004AD3BA /* CustomUIViewCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 				E570707D24D6079A00297410 /* MainViewController.swift */,
 				E509ECFB24D6F8EA0021192E /* AutoLauoutSampleViewController.swift */,
 				E509ECFD24D6FB3A0021192E /* XibCellSampleViewController.swift */,
+				E5AB6E9F24DAE56F004AD3BA /* CustomButtonViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 				E5E4089324D610B300C33471 /* common.swift in Sources */,
 				E5E4088E24D60EA400C33471 /* UIColor-Extension.swift in Sources */,
 				E52E2AB924D616C300E097E7 /* SimpleSelectCell.swift in Sources */,
+				E5AB6EA224DAE663004AD3BA /* CustomUIViewCell.swift in Sources */,
 				E570707324D5532900297410 /* AppTableView.swift in Sources */,
 				E570705D24D5529E00297410 /* AppDelegate.swift in Sources */,
 				E509ECFC24D6F8EA0021192E /* AutoLauoutSampleViewController.swift in Sources */,
@@ -245,6 +252,7 @@
 				E570707C24D6076500297410 /* AppNavigationController.swift in Sources */,
 				E5E4089524D6131D00C33471 /* UIView-Extension.swift in Sources */,
 				E570707E24D6079A00297410 /* MainViewController.swift in Sources */,
+				E5AB6EA024DAE56F004AD3BA /* CustomButtonViewController.swift in Sources */,
 				E5F79E6F24D8AF9E00F844F7 /* AutoLayoutSampleTableViewCell.swift in Sources */,
 				E570707524D5536200297410 /* AppFixedTableView.swift in Sources */,
 				E509ED0124D84E5F0021192E /* XibSampleTableViewCell.swift in Sources */,
