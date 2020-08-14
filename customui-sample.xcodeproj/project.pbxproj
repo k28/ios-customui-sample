@@ -25,6 +25,11 @@
 		E570707E24D6079A00297410 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570707D24D6079A00297410 /* MainViewController.swift */; };
 		E5AB6EA024DAE56F004AD3BA /* CustomButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB6E9F24DAE56F004AD3BA /* CustomButtonViewController.swift */; };
 		E5AB6EA224DAE663004AD3BA /* CustomUIViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB6EA124DAE663004AD3BA /* CustomUIViewCell.swift */; };
+		E5AB6EA424E339EA004AD3BA /* TopNavigationBarCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB6EA324E339E9004AD3BA /* TopNavigationBarCustomViewController.swift */; };
+		E5AB6EA724E33C1D004AD3BA /* TitleWithImageNavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB6EA624E33C1D004AD3BA /* TitleWithImageNavigationBarViewController.swift */; };
+		E5AB6EAA24E33DBB004AD3BA /* TopUILabelCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB6EA924E33DBB004AD3BA /* TopUILabelCustomViewController.swift */; };
+		E5BBB7D524E67E120020F369 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BBB7D424E67E120020F369 /* App.swift */; };
+		E5BBB7D724E67EC10020F369 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BBB7D624E67EC10020F369 /* AppConfig.swift */; };
 		E5E4088E24D60EA400C33471 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4088D24D60EA400C33471 /* UIColor-Extension.swift */; };
 		E5E4089024D60F7100C33471 /* AppContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4088F24D60F7100C33471 /* AppContentView.swift */; };
 		E5E4089324D610B300C33471 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E4089224D610B300C33471 /* common.swift */; };
@@ -53,6 +58,11 @@
 		E570707D24D6079A00297410 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E5AB6E9F24DAE56F004AD3BA /* CustomButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonViewController.swift; sourceTree = "<group>"; };
 		E5AB6EA124DAE663004AD3BA /* CustomUIViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIViewCell.swift; sourceTree = "<group>"; };
+		E5AB6EA324E339E9004AD3BA /* TopNavigationBarCustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationBarCustomViewController.swift; sourceTree = "<group>"; };
+		E5AB6EA624E33C1D004AD3BA /* TitleWithImageNavigationBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleWithImageNavigationBarViewController.swift; sourceTree = "<group>"; };
+		E5AB6EA924E33DBB004AD3BA /* TopUILabelCustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUILabelCustomViewController.swift; sourceTree = "<group>"; };
+		E5BBB7D424E67E120020F369 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		E5BBB7D624E67EC10020F369 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		E5E4088D24D60EA400C33471 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		E5E4088F24D60F7100C33471 /* AppContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContentView.swift; sourceTree = "<group>"; };
 		E5E4089224D610B300C33471 /* common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
@@ -121,6 +131,8 @@
 				E570705C24D5529E00297410 /* AppDelegate.swift */,
 				E570705E24D5529E00297410 /* SceneDelegate.swift */,
 				E570706024D5529E00297410 /* ViewController.swift */,
+				E5BBB7D424E67E120020F369 /* App.swift */,
+				E5BBB7D624E67EC10020F369 /* AppConfig.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -139,6 +151,8 @@
 		E570707824D604A400297410 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E5AB6EA824E33DA0004AD3BA /* UILabel */,
+				E5AB6EA524E33BEF004AD3BA /* NavigationBar */,
 				E570707924D604C900297410 /* AppViewController.swift */,
 				E570707B24D6076500297410 /* AppNavigationController.swift */,
 				E570707D24D6079A00297410 /* MainViewController.swift */,
@@ -147,6 +161,23 @@
 				E5AB6E9F24DAE56F004AD3BA /* CustomButtonViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E5AB6EA524E33BEF004AD3BA /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				E5AB6EA324E339E9004AD3BA /* TopNavigationBarCustomViewController.swift */,
+				E5AB6EA624E33C1D004AD3BA /* TitleWithImageNavigationBarViewController.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		E5AB6EA824E33DA0004AD3BA /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				E5AB6EA924E33DBB004AD3BA /* TopUILabelCustomViewController.swift */,
+			);
+			path = UILabel;
 			sourceTree = "<group>";
 		};
 		E5E4088C24D60E6C00C33471 /* Extensions */ = {
@@ -237,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AB6EAA24E33DBB004AD3BA /* TopUILabelCustomViewController.swift in Sources */,
+				E5BBB7D724E67EC10020F369 /* AppConfig.swift in Sources */,
 				E509ECFE24D6FB3A0021192E /* XibCellSampleViewController.swift in Sources */,
 				E570706124D5529E00297410 /* ViewController.swift in Sources */,
 				E5E4089324D610B300C33471 /* common.swift in Sources */,
@@ -246,15 +279,18 @@
 				E570707324D5532900297410 /* AppTableView.swift in Sources */,
 				E570705D24D5529E00297410 /* AppDelegate.swift in Sources */,
 				E509ECFC24D6F8EA0021192E /* AutoLauoutSampleViewController.swift in Sources */,
+				E5AB6EA424E339EA004AD3BA /* TopNavigationBarCustomViewController.swift in Sources */,
 				E570705F24D5529E00297410 /* SceneDelegate.swift in Sources */,
 				E5E4089024D60F7100C33471 /* AppContentView.swift in Sources */,
 				E570707A24D604C900297410 /* AppViewController.swift in Sources */,
+				E5AB6EA724E33C1D004AD3BA /* TitleWithImageNavigationBarViewController.swift in Sources */,
 				E570707C24D6076500297410 /* AppNavigationController.swift in Sources */,
 				E5E4089524D6131D00C33471 /* UIView-Extension.swift in Sources */,
 				E570707E24D6079A00297410 /* MainViewController.swift in Sources */,
 				E5AB6EA024DAE56F004AD3BA /* CustomButtonViewController.swift in Sources */,
 				E5F79E6F24D8AF9E00F844F7 /* AutoLayoutSampleTableViewCell.swift in Sources */,
 				E570707524D5536200297410 /* AppFixedTableView.swift in Sources */,
+				E5BBB7D524E67E120020F369 /* App.swift in Sources */,
 				E509ED0124D84E5F0021192E /* XibSampleTableViewCell.swift in Sources */,
 				E570707724D5539E00297410 /* AppTableViewCell.swift in Sources */,
 			);

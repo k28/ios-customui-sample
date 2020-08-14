@@ -29,7 +29,7 @@ class MainViewController: AppViewController {
         
         let fixedCellSection = FixedContents()
         
-        fixedCellSection.append(SimpleSelectCell(title: "AutoLayout", onSelect: { [weak self] in
+        fixedCellSection.append(SimpleSelectCell(title: "Auto Layout", onSelect: { [weak self] in
             let vc = AutoLauoutSampleViewController()
             self?.navigationController?.pushViewController(vc, animated: true)
         }))
@@ -39,10 +39,23 @@ class MainViewController: AppViewController {
             self?.navigationController?.pushViewController(vc, animated: true)
         }))
         
-        fixedCellSection.append(SimpleSelectCell(title: "CustomButton", onSelect: { [weak self] in
+        fixedCellSection.append(SimpleSelectCell(title: "Custom Button", onSelect: { [weak self] in
             let vc = CustomButtonViewController()
             self?.navigationController?.pushViewController(vc, animated: true)
         }))
+        
+        fixedCellSection.append(SimpleSelectCell(title: "UILabel", onSelect: { [weak self] in
+            let vc = TopUILabelCustomViewController()
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }))
+
+        //FIXME: 工事中
+//        fixedCellSection.append(SimpleSelectCell(title: "Navigation Bar", onSelect: { [weak self] in
+//            let vc = TopNavigationBarCustomViewController()
+//            self?.navigationController?.pushViewController(vc, animated: true)
+//        }))
+        
+
 
         mainView.sections.append(fixedCellSection)
     }

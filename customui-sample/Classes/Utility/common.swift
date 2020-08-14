@@ -21,4 +21,13 @@ extension common {
         v.layer.borderWidth = 2.0
     }
     
+    static func loadString(_ key: String) -> String {
+        let str = NSLocalizedString(key, comment: "")
+        if str == key {
+            print("Localize string not found \(key)")
+        }
+        
+        return str
+    }
+    
 }
