@@ -12,6 +12,7 @@
 		E509ED0124D84E5F0021192E /* XibSampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E509ECFF24D84E5F0021192E /* XibSampleTableViewCell.swift */; };
 		E509ED0224D84E5F0021192E /* XibSampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E509ED0024D84E5F0021192E /* XibSampleTableViewCell.xib */; };
 		E52E2AB924D616C300E097E7 /* SimpleSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E2AB824D616C300E097E7 /* SimpleSelectCell.swift */; };
+		E53EC8082543881000F0CC3F /* ContentHuggingPrioritySampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53EC8072543881000F0CC3F /* ContentHuggingPrioritySampleCell.swift */; };
 		E570705D24D5529E00297410 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570705C24D5529E00297410 /* AppDelegate.swift */; };
 		E570705F24D5529E00297410 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570705E24D5529E00297410 /* SceneDelegate.swift */; };
 		E570706124D5529E00297410 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570706024D5529E00297410 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		E509ECFF24D84E5F0021192E /* XibSampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibSampleTableViewCell.swift; sourceTree = "<group>"; };
 		E509ED0024D84E5F0021192E /* XibSampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibSampleTableViewCell.xib; sourceTree = "<group>"; };
 		E52E2AB824D616C300E097E7 /* SimpleSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSelectCell.swift; sourceTree = "<group>"; };
+		E53EC8072543881000F0CC3F /* ContentHuggingPrioritySampleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHuggingPrioritySampleCell.swift; sourceTree = "<group>"; };
 		E570705924D5529E00297410 /* customui-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "customui-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E570705C24D5529E00297410 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E570705E24D5529E00297410 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				E509ED0024D84E5F0021192E /* XibSampleTableViewCell.xib */,
 				E5F79E6E24D8AF9E00F844F7 /* AutoLayoutSampleTableViewCell.swift */,
 				E5AB6EA124DAE663004AD3BA /* CustomUIViewCell.swift */,
+				E53EC8072543881000F0CC3F /* ContentHuggingPrioritySampleCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				E570705F24D5529E00297410 /* SceneDelegate.swift in Sources */,
 				E5E4089024D60F7100C33471 /* AppContentView.swift in Sources */,
 				E570707A24D604C900297410 /* AppViewController.swift in Sources */,
+				E53EC8082543881000F0CC3F /* ContentHuggingPrioritySampleCell.swift in Sources */,
 				E5AB6EA724E33C1D004AD3BA /* TitleWithImageNavigationBarViewController.swift in Sources */,
 				E570707C24D6076500297410 /* AppNavigationController.swift in Sources */,
 				E5E4089524D6131D00C33471 /* UIView-Extension.swift in Sources */,

@@ -89,6 +89,13 @@ class FixedContents : AppFixedContents {
     func append(_ cell: AppTableViewCell) {
         contents.append(cell)
     }
+    
+    func append(_ cellMakeFunc: (() -> AppTableViewCell?)) {
+        if let cell = cellMakeFunc() {
+            contents.append(cell)
+        }
+    }
+    
 }
 
 

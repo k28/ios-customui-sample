@@ -30,12 +30,18 @@ extension AutoLauoutSampleViewController {
         
         override func setupContents() {
             
-            let cell = AutoLayoutSampleTableViewCell(title: "Title (1)", onSelect: {
-                print("AutoLayoutSampleTableViewCell selected")
-            })
-            
             let section = FixedContents()
-            section.append(cell)
+            
+            section.append {
+                return AutoLayoutSampleTableViewCell(title: "Title (1)", onSelect: {
+                    print("AutoLayoutSampleTableViewCell selected")
+                })
+            }
+            
+            section.append {
+                return ContentHuggingPrioritySampleCell()
+            }
+            
             self.sections.append(section)
         }
         
